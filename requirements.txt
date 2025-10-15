@@ -1,0 +1,9 @@
+python-dotenv
+requests
+pandas
+psycopg2-binary
+apache-airflow
+config
+load
+plotly.express
+plotly.graph_objects

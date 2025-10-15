@@ -1,0 +1,47 @@
+# Virtual environments
+venv/
+venv_airflow/
+env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+
+# Environment variables
+.env
+
+# Logs
+logs/*.log
+log/*.log
+
+# Data files
+data/*.csv
+
+# Airflow
+airflow.db
+airflow.cfg
+airflow-webserver.pid
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database
+*.db
+*.sqlite
+
+# Temporary files
+output.log
+load_csv_final.py
+load_smart.py

@@ -1,4 +1,3 @@
-cat > README.md << 'EOF'
 # 🌤️ Real-Time Weather Data Pipeline
 
 > An automated ETL pipeline that collects, processes, and visualizes weather data from multiple US cities using Python, PostgreSQL, and Streamlit.
@@ -288,4 +287,4 @@ This project is open source and available under the MIT License.
 ---
 
 ⭐ **If you found this project helpful, please star the repository!**
-EOF
+

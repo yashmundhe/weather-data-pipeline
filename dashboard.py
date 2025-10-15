@@ -30,9 +30,10 @@ st.markdown("""
 #Database connection
 @st.cache_resource
 def get_connection():
-    db_url="postgresql://weather_user:weather123@localhost:5432/weather_pipeline"
-    return create_engine(db_url)
-
+    try:
+        db_url = st.secrets.get("DATABASE_URL", os.getenv("DATABASE_URL", "postgresql://weather_user:weather123@localhost:5432/weather_pipeline"))
+    except:
+        db_url = os.getenv("DATABASE_URL", "postgresql://weather_user:weather123@localhost:5432/weather_pipeline")
 engine=get_connection()
 
 #Load data

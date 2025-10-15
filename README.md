@@ -288,4 +288,6 @@ This project is open source and available under the MIT License.
 
 ⭐ **If you found this project helpful, please star the repository!**
 <img width="1470" height="956" alt="Screenshot 2025-10-15 at 12 44 52 PM" src="https://github.com/user-attachments/assets/acab3f4f-8c29-4074-bb0f-e07784667d1f" />
-
+<img width="1470" height="956" alt="Screenshot 2025-10-15 at 12 45 15 PM" src="https://github.com/user-attachments/assets/2bbac1c0-90be-4761-9cdf-1fd70a8eb573" />
+<img width="1470" height="956" alt="Screenshot 2025-10-15 at 12 45 27 PM" src="https://github.com/user-attachments/assets/d35cd0ff-60ea-47dc-bb23-29e0b0d03867" />
+<img width="1470" height="956" alt="Screenshot 2025-10-15 at 12 45 32 PM" src="https://github.com/user-attachments/assets/0d3c96f4-b26e-41d5-9b31-5ce33001d403" />

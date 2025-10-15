@@ -287,4 +287,5 @@ This project is open source and available under the MIT License.
 ---
 
 ⭐ **If you found this project helpful, please star the repository!**
+<img width="1470" height="956" alt="Screenshot 2025-10-15 at 12 44 52 PM" src="https://github.com/user-attachments/assets/acab3f4f-8c29-4074-bb0f-e07784667d1f" />
 

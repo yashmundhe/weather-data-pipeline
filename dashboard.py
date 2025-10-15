@@ -30,16 +30,20 @@ st.markdown("""
 #Database connection
 @st.cache_resource
 def get_connection():
-    try:
-        db_url = st.secrets.get("DATABASE_URL", os.getenv("DATABASE_URL", "postgresql://weather_user:weather123@localhost:5432/weather_pipeline"))
-    except:
+    # Try to get DATABASE_URL from Streamlit secrets first, then env
+    if "DATABASE_URL" in st.secrets:
+        db_url = st.secrets["DATABASE_URL"]
+    else:
         db_url = os.getenv("DATABASE_URL", "postgresql://weather_user:weather123@localhost:5432/weather_pipeline")
-engine=get_connection()
+    
+    return create_engine(db_url)
+
+engine = get_connection()
 
 #Load data
-@st.cache_data
+@st.cache_data(ttl=300)
 def load_data():
-    query="""
+    query = """
     SELECT c.city_name, c.country, c.latitude, c.longitude,
            w.timestamp, w.temperature, w.feels_like, w.temp_min, w.temp_max,
            w.humidity, w.pressure, w.weather_main, w.weather_description,
@@ -48,8 +52,8 @@ def load_data():
     JOIN cities c ON w.city_id = c.city_id
     ORDER BY w.timestamp DESC
     """
-
-    return pd.read_sql(query, engine)
+    with engine.connect() as conn:
+        return pd.read_sql(query, conn)
 
 #Load the data
 df=load_data()

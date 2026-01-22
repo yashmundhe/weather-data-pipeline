@@ -266,7 +266,7 @@ The dashboard provides:
 
 **Yash Mundhe**
 - MS Data Science @ Northeastern University
-- LinkedIn: [Connect with me](https://linkedin.com/in/your-profile)
+- LinkedIn: [Connect with me](https://www.linkedin.com/in/yash-mundhe-30189819a/)
 - Email: yashmundhe01@gmail.com
 - Portfolio: [GitHub](https://github.com/yashmundhe)
 
